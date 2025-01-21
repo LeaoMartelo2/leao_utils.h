@@ -1,6 +1,7 @@
 #ifndef LEAO_TYPES_H_
 #define LEAO_TYPES_H_
 
+#include <stdbool.h>
 #include <stddef.h>
 #include <stdint.h>
 #include <stdio.h>
@@ -21,7 +22,7 @@ inline vec3_lt vec3_add(vec3_lt a, vec3_lt b) {
     return (vec3_lt){a.x + b.x, a.y + b.y, a.z + b.z};
 }
 
-inline vec3_lt vec3_multiple(vec3_lt a, vec3_lt b) {
+inline vec3_lt vec3_multiply(vec3_lt a, vec3_lt b) {
     return (vec3_lt){a.x * b.x, a.y * b.y, a.z * b.z};
 }
 
@@ -38,7 +39,7 @@ inline vec2_lt vec2_add(vec2_lt a, vec2_lt b) {
     return (vec2_lt){a.x + b.x, a.y + b.y};
 }
 
-inline vec2_lt vec2_multiple(vec2_lt a, vec2_lt b) {
+inline vec2_lt vec2_multiply(vec2_lt a, vec2_lt b) {
     return (vec2_lt){a.x * b.x, a.y * b.y};
 }
 
